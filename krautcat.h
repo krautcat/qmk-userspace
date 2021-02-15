@@ -14,6 +14,7 @@ enum krautcat_common_keycodes {
     RGUI_ENT = RGUI_T(KC_ENT),      // Tap is Enter, hold is Right GUI.
 
     LCTL_TAB = LCTL_T(KC_TAB),	    // Tab is tap, hold is Left Control.
+    LCTL_ENT = LCTL_T(KC_ENT),      // Tap is Enter, hoid is Left Control.
     RCTL_ENT = RCTL_T(KC_ENT),      // Enter is tap, hold is Right Control.
 
     LALT_ESC = LALT_T(KC_ESC),      // Esc is tap, hold is Left Alt.
