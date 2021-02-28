@@ -1,5 +1,10 @@
 #include QMK_KEYBOARD_H
 
+#define KEYCAPS_CHERRY 1
+#define KEYCAPS_KAT 11
+#define KEYCAPS_SA 21
+#define KEYCAPS_MT3 22
+
 enum layers {
     _KRAUTCAT_BASE = 0,
     _KRAUTCAT_RIGHTED,
