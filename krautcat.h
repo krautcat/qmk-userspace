@@ -1,4 +1,4 @@
-#include QMK_KEYBOARD_H
+#pragma once
 
 #define KEYCAPS_CHERRY 1
 #define KEYCAPS_KAT 11
@@ -15,7 +15,12 @@ enum layers {
 
 enum layers_alt {
     _KRAUTCAT_DIGITS = 1,
-    _KRAUTCAT_NAV,
+    _KRAUTCAT_F,
+    _KRAUTCAT_MISC,
+};
+
+enum layers_alt_2 {
+    _KRAUTCAT_NAV = 2,
 };
 
 enum krautcat_common_keycodes {
@@ -26,7 +31,7 @@ enum krautcat_common_keycodes {
     RGUI_DEL = RGUI_T(KC_DEL),      // Tap is Delete, hold is Right GUI.
     RGUI_ENT = RGUI_T(KC_ENT),      // Tap is Enter, hold is Right GUI.
     RGUI_RBRC = RGUI_T(KC_RBRC),    // Tap is Right Bracket, hold if Right GUI.
-    RGUI_F12 = RGUI_T(KC_F12),      // Tap is F12, hold is Righjt GUI. 
+    RGUI_F12 = RGUI_T(KC_F12),      // Tap is F12, hold is Right GUI. 
 
     
     LCTL_TAB = LCTL_T(KC_TAB),	    // Tab is tap, hold is Left Control.
@@ -41,10 +46,11 @@ enum krautcat_common_keycodes {
     LALT_ESC = LALT_T(KC_ESC),      // Esc is tap, hold is Left Alt.
     LALT_TAB = LALT_T(KC_TAB),      // Tap is Tab, hold is Left Alt.
     LALT_BSLS = LALT_T(KC_BSLS),    // Tap is Backslash, hold is Left Alt.
-	LALT_EQL = LALT_T(KC_EQL),		// Gap is Equal, hold is Left Alt.
+    LALT_EQL = LALT_T(KC_EQL),		// Gap is Equal, hold is Left Alt.
   
     RALT_GRV = RALT_T(KC_GRV),      // Grave is tap, hold is Right Alt.
     RALT_MNS = RALT_T(KC_MINUS),    // Tap is Minus, hold is Right Alt.
+    RALT_RBRC = RALT_T(KC_RBRC),    // Tap is Right Bracket, hold is Left Alt.
 
 
     LSFT_SPC = LSFT_T(KC_SPC),      // Space is tap, hold is Left Shift.
